@@ -36,9 +36,6 @@ As a demo example, let's create a simple script which we will
 call example.vim with the following content:
 
 ```vim
-"import vimi standard library
-source stdutils.vim
-
 "take user input
 let ciao = Input("Type something: ")
 
@@ -53,7 +50,7 @@ echo(passed_args)
 
 vimi will execute the script by executing:
 ```sh
-vimi example.vim
+vimi example.vim --arg1 value1 --arg2 value2 -v
 ```
 
 ## License
