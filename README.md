@@ -7,6 +7,19 @@ language.
 
 ## Installation
 
+In order to install vimi we can simply clone this repo
+and execute the install.sh script by doing:
+
+```sh
+git clone https://github.com/gnebbia/vimi
+```
+
+and then:
+
+```sh
+cd vimi/
+bash install.sh
+```
 
 
 
