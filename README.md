@@ -1,9 +1,16 @@
 # vimi
 
+THIS IS A WORK IN PROGRESS
+
 This project is an attempt at creating a simple vimscript interpreter.
+This is not something serious of course, but I found it joyful to use it to whip
+up some vimscript line and practice my vimscript-fu.
 Vimi is able to take as input a vimscript and execute it, and hence
 it makes vim more similar to any other full-fledged programming
 language.
+
+N.B.: Don't take this too seriously, vimscript is not naturally full-fledged as other
+programming languages such as perl, python, ruby, C and so son.
 
 ## Installation
 
@@ -18,7 +25,7 @@ and then:
 
 ```sh
 cd vimi/
-bash install.sh
+
 ```
 
 
