@@ -1,14 +1,14 @@
 "import libraries with
-source stdutils.vim
 
-let ciao = Input("message")
+"Import anotherlib
 
-echo "you inserted " . ciao
 
-"let varname = system('tr "\0" " " </proc/' . getpid() . '/cmdline 2>/dev/null')
+let msg = Input("Insert a message: ")
 
-"echo $VIMI_ARGS
+echo "You inserted: " . msg
+
 let argss = Argv()
 
+echo "The passed command line arguments are:"
 echo(argss)
 
