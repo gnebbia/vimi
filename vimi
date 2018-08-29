@@ -1,0 +1,25 @@
+#!/bin/sh
+#
+# Author:  gnebbia
+# License: GPLv3 
+# This is the vimi installation script
+
+
+set -eo pipefail
+
+
+STDLIB_PATH="$HOME/.vimlibs/stdutils.vim"
+
+main () { 
+    if [[ -z "$1" ]]; then
+		echo "No valid vim script supplied";
+	else
+        export VIMI_ARGS="${@:2}"
+		exec vim -i NONE -u "${STDLIB_PATH}" -U NONE -V1 -nNesS "$1" -c'echo""|qall!';
+        unset VIMI_ARGS
+
+	fi
+}
+
+
+main "$@"
